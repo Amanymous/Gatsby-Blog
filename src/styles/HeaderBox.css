@@ -1,0 +1,172 @@
+.container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+.box {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to right, #000000, #121212, #1e1e1e, #29292a, #353536);
+    box-shadow: 4px 4px 15px 2px black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.content h3 {
+    color: white;
+    margin-left: 3rem;
+    font-size: 6vh;
+    display: flex;
+}
+
+.content p {
+    color: white;
+    margin-left: 3rem;
+    font-family: sans-serif;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.img img{
+    width: 70%;
+    margin-left: 13rem;
+    max-height: 360px;
+    display: flex;
+}
+
+@media screen and (max-width: 375px){
+    .content h3{
+        font-size: 28px;
+    } 
+    .content p{
+        font-size: 17px;
+    }   
+}
+
+@media screen and (max-width: 450px){
+    .content h3{
+        font-size: 28px;
+    } 
+    .content p{
+        font-size: 17px;
+    }   
+}
+
+@media screen and (max-width: 280px){
+    .content h3{
+        font-size: 23px;
+    } 
+    .content p{
+        font-size: 15px;
+    }   
+}
+
+.btn-cont {
+    display: flex;
+    margin-left: 3rem;
+}
+
+.btn {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: sans-serif;
+}
+
+.btn:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+
+}
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 30px auto;
+    width: 100%;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    transition: 0.4s;
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 73px;
+    margin-top: -296px;
+    height: 40px;
+  }
+
+  @media (max-width: 375px) {
+      .card .card_title {
+          font-size: 48px;
+      }
+  }
+  
+  @media (max-width: 414px) {
+      .card .card_title {
+          font-size: 48px;
+      }
+  }
+  
+  
+  .title-white {
+    color: white;
+  }
+  
+  .title-black {
+    color: black;
+  }
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+  
+  
+  /*
+  .card {
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    transition: 0.4s;
+  }
+  */
